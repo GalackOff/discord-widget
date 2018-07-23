@@ -219,10 +219,10 @@ var discordWidget = discordWidget || (function(){
 
           var discordJoin = '';
           if (d.instant_invite != 'null')
-          discordJoin = '<a href="' + d.instant_invite + '" target="_blank">Join Server</a>';
+          discordJoin = '<a href="' + d.instant_invite + '" target="_blank">Rejoindre</a>';
 
           treeElement.innerHTML = formatted;
-          usersElement.innerHTML = 'Users Online: ' + d.members.length;
+          usersElement.innerHTML = 'Membre en ligne: ' + d.members.length;
           if (p.join) {
             joinElement.innerHTML = discordJoin;
           } else {
